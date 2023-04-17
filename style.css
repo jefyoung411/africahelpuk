@@ -289,17 +289,18 @@ p{
 /* Hero Section  */
 #hero{
     width: 100%;
-    height: 100vh;
     background-image: url('./images/alex-radelich-rtCfGTI7nCA-unsplash.jpg');
     background-size: cover;
     background-position: top center;
     position: relative;
     z-index: 1;
     display: flex;
+    flex-wrap: wrap;
     justify-content: center ;
     align-items: center;
 }
 .hero-wrapper{
+    height: 768px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -537,7 +538,7 @@ p{
     align-items: center;
 }
 .test-wrapper{
-    margin-bottom: 10rem;
+    margin-bottom: 5rem;
 }
 .test-wrapper .section-heading,
 .sub-heading{
@@ -584,3 +585,181 @@ p{
     }
 }
 /* End Testimonial Section  */
+
+/* Volunteer Section  */
+#volunteer{
+    background: var(--white-1);
+}
+.volunteer{
+    padding-bottom: 5rem;
+}
+.volunteer-wrapper{
+    width: 90%;
+    text-align: center;
+}
+.volunteer-left-wrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.volunteer-left-wrapper p{
+    margin-bottom: 2rem;
+}
+.volunteer-img{
+    margin-bottom: 2rem;
+}
+.volunteer-left-wrapper a{
+    margin-bottom: 5rem;
+}
+.volunteer-right-wrapper{
+    border: 2px solid;
+}
+.volunteer-right-wrapper form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.form-group{
+    width: 90%;
+    height: 5rem;
+    margin-bottom: 3rem;
+    border: 2px solid;
+}
+.form-group-area{
+    width: 90%;
+    margin-bottom: 5rem;
+    border: 2px solid;
+}
+.volunteer-right-wrapper a{
+    margin-bottom: 5rem;
+}
+
+@media only screen and (min-width: 768px){
+    .volunteer-wrapper{
+        display: grid;
+        grid-template-columns: 50% 50%;
+        gap: 2rem;
+    }
+    .volunteer-right-wrapper h2{
+        margin-bottom: 10rem;
+    }
+    .form-group{
+        height: 6rem;
+    }
+}
+/* End Volunteer Section  */
+
+/* Newsletter Section  */
+.newsletter-wrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.newsletter-wrapper p{
+    margin-bottom: 2rem;
+}
+.form-area{
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 5rem;
+}
+.newsletter-wrapper button{
+    height: 5rem;
+    margin-left: -1rem;
+    color: white;
+    background-color: var(--black-2);
+}
+@media only screen and (min-width: 768px) {
+    .newsletter-wrapper button{
+        height: 6rem;
+    }
+}
+/* End Newsletter Section  */
+
+/* Footer Section  */
+#footer{
+    background: var(--black-2);
+}
+.footer-left-wrapper{
+    margin-top: 10rem;
+}
+.footer-heading{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+.footer-heading h1{
+    color: white;
+    font-size: 1.8rem;
+    margin-left: 2rem;
+}
+.footer-left-wrapper p{
+    color: white;
+    text-align: center;
+    padding: 2rem;
+}
+.footer-socials{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    margin-bottom: 5rem;
+}
+.footer-right-wrapper{
+    padding-bottom: 10rem;
+}
+.footer-right-heading .sub-heading{
+    color: white;
+}
+.footer-right-info{
+    color: white;
+    font-family: 'Montserrat';
+    font-size: 1.8rem;
+    padding-bottom: ;
+}
+.footer-right-info ul{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+.footer-right-info li{
+    margin-bottom: 2rem;
+    font-size: 1.8rem;
+    text-align: center;
+}
+@media only screen and (min-width: 768px){
+    .footer-wrapper{
+        display: flex;
+        flex-direction: row;
+        padding-top: 5rem;
+    }
+    .footer-left{
+        flex: 2;
+    }
+    .footer-right{
+        flex: 3;
+    }
+    .footer-right-wrapper{
+        display: grid;
+        grid-template-columns: 50% 50%;
+    }
+}
+footer{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    height: 3rem;
+    margin-top: 1rem;
+}
+/* End Footer Section  */
