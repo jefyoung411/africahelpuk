@@ -187,8 +187,14 @@ p{
 .nav{
     padding: 2rem 0;
     background: transparent;
+    justify-content: center;
 }
-
+.nav__logo{
+    height: 10rem;
+    width: 10rem;
+    margin-left: 2rem;
+    margin-top: -1rem;
+}
 .nav__icon,
 .nav__close,
 .nav__bgOverlay{
@@ -198,6 +204,7 @@ p{
 .nav__wrapper{
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
 .nav__list li{
@@ -219,6 +226,10 @@ p{
 @media only screen and (max-width: 768px){
     .nav{
         position: relative;
+    }
+    .nav__logo{
+        width: 7rem;
+        height: 7rem;
     }
     .nav__icon{
         display: block;
@@ -684,6 +695,10 @@ p{
 #footer{
     background: var(--black-2);
 }
+.footer-logo{
+    height: 10rem;
+    width: 10rem;
+}
 .footer-left-wrapper{
     margin-top: 10rem;
 }
@@ -744,11 +759,18 @@ p{
         flex-direction: row;
         padding-top: 5rem;
     }
+    .footer-logo{
+        height: 13rem;
+        width: 13rem;
+    }
     .footer-left{
         flex: 2;
     }
     .footer-right{
         flex: 3;
+    }
+    .footer-left-wrapper{
+        margin-top: 0.1rem;
     }
     .footer-right-wrapper{
         display: grid;
