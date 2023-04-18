@@ -1,0 +1,20 @@
+#our-causes-hero{
+    width: 100%;
+    background-image: url('./images/emmanuel-ikwuegbu-M-4lFg1Xfag-unsplash.jpg');
+    background-size: cover;
+    background-position: top center;
+    position: relative;
+    z-index: 1;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center ;
+    align-items: center;
+}
+.our-causes-hero-wording{
+    color: white;
+    font-size: 6rem;
+}
+.our-causes-wrapper{
+    margin-top: 10rem;
+}
+
