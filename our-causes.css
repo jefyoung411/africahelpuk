@@ -1,3 +1,4 @@
+/* Our Causes Section  */
 #our-causes-hero{
     width: 100%;
     background-image: url('./images/emmanuel-ikwuegbu-M-4lFg1Xfag-unsplash.jpg');
@@ -17,4 +18,106 @@
 .our-causes-wrapper{
     margin-top: 10rem;
 }
+/* End Our Causes Section  */
 
+/* Our Events Section  */
+.our-events{
+    margin-top: -7rem;
+    width: 90%;
+}
+.our-events-img{
+    width: 100%;
+    height: 50rem;
+    background-image: url('./images/roman-nguyen-lPPkJ4NfQtQ-unsplash.jpg');
+    background-size: cover;
+    background-position: top center;
+    position: relative;
+    z-index: 1;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: start;
+    align-items: flex-start;
+}
+.our-events-img-date{
+    background-color: var(--black-1);
+    padding: 4rem;
+}
+.our-events-date{
+    color: white;
+    font-size: 4rem;
+    font-weight: bold;
+    margin-bottom: 1.5rem;
+}
+.our-events-month{
+    color: white;
+    font-size: 2rem;
+    text-align: center;
+}
+.our-events-organizer{
+    margin-top: 2rem;
+    text-align: center;
+}
+.our-events-time{
+    margin-top: 2rem;
+    text-align: center;
+    font-weight: bold;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+.our-events-left-wrapper-upper{
+    border-bottom: 1px solid;
+}
+.our-events-left-wrapper-lower{
+    text-align: center;
+}
+.our-events-left-wrapper-lower-text{
+    margin-bottom: 2rem;
+}
+.events-location{
+    padding: 2rem;
+    background: var(--black-3);
+    margin-left: 8rem;
+    margin-right: 8rem;
+}
+.events-location p{
+    color: white;
+}
+.our-events-right{
+    margin-top: 5rem;
+}
+.our-events-card-wrapper{
+    display: grid;
+    grid-template-columns: 10rem 1fr;
+    margin-bottom: 2rem;
+}
+.our-events-card-wrapper-left{
+    width: 12rem;
+    background: var(--black-1);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 2rem;
+}
+.our-events-card-wrapper-right{
+    padding-left: 5rem;
+}
+.our-events-card-wrapper-right p,
+.our-events-card-wrapper-right h2{
+    text-align: start;
+}
+.our-events-card{
+    margin-bottom: 2rem;
+    border-bottom: 0.1rem solid;
+}
+@media only screen and (min-width: 768px){
+    .our-events-wrapper{
+        display: flex;
+        flex-direction: row;
+        gap: 3rem;
+    }
+    .our-events-card-wrapper-right h2{
+        margin-bottom: 2rem;
+    }
+}
+/* End Our Events Section  */
