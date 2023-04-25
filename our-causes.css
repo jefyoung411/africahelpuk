@@ -168,7 +168,7 @@
 }
 .gallery-wrapper{
     display: flex;
-    width: 70%;
+    width: 70%; 
     justify-content: space-around;
 }
 .gallery-card{
@@ -185,7 +185,7 @@
 .gallery-card:hover{
     transform: translateY(20px);
 }
-.gallery-card::before{
+.gallery-card:before{
     content: "";
     position: absolute;
     top: 0;
@@ -198,13 +198,13 @@
     transition: 0.5s all;
     opacity: 0;
 }
-.gallery-card:hover::before{
+.gallery-card:hover:before{
     opacity: 1;
 }
 .gallery-card img{
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    object-fit: cover; 
     position: absolute;
     top: 0;
     left: 0;
@@ -213,6 +213,7 @@
     position: relative;
     z-index: 3;
     color: #fff;
+    opacity: 0;
     transform: translateY(30px);
     transition: 0.5s all;
 }
@@ -228,6 +229,7 @@
     font-size: 15px;
     margin-top: 8px;
     margin-bottom: 20px;
+    color: white;
 }
 .gallery-card .gallery-card-info .btn:hover{
     box-shadow: 0px 7px 10px rgba(0,0,0,0.5);
@@ -245,3 +247,270 @@
     }
 }
 /* End Gallery Section  */
+
+/* About Section  */
+#about-hero{
+    width: 100%;
+    background-image: url('./images/emmanuel-ikwuegbu-m4h6qtdogMk-unsplash.jpg');
+    background-size: cover;
+    background-position: top center;
+    position: relative;
+    z-index: 1;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center ;
+    align-items: center;
+    margin-bottom: 15rem;
+}
+.about-hero-wording{
+    color: white;
+    font-size: 6rem;
+}
+.about-wrapper{
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+}
+.about-left-wrapper{
+    margin-right: 10rem;
+    margin-left: 10rem;
+}
+.about-left-img{
+    height: 480px;
+}
+.about-left-img img{
+    object-fit: cover;
+}
+.about-left-img-text{
+    background-color: var(--black-1);
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    color: white;
+}
+.about-left-img-text h2{
+    font-size: 1.6rem;
+}
+.about-right{
+    margin-top: -5rem;
+    margin-bottom: 10rem;
+}
+.about-right-wrapper h1{
+    text-align: center;
+    margin-top: 5rem;
+}
+.about-right-wrapper h2{
+    margin-top: 5rem;
+}
+.about-right-wrapper p{
+    margin-top: 5rem;
+    text-align: center;
+}
+.about-right-text p{
+    color: white;
+    background: var(--black-1);
+    padding: 2rem;
+}
+.about-right-button{
+    margin-top: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+@media only screen and (min-width:768px){
+    .about-wrapper{
+        display: grid;
+        grid-template-columns: 50% 50%;
+        gap: 2rem;
+    }
+    .about-right{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-top: 10rem;
+    }
+    .about-left-img-text h2{
+        font-size: 2rem;
+    }
+}
+/* End About Section  */
+
+/* About Mid Section  */
+.about-mid{
+    width: 90%;
+}
+.about-mid-left{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 5rem;
+}
+.about-mid-left h2{
+    margin-bottom: 5rem;
+}
+.about-mid-left p{
+    margin-bottom: 3rem;
+}
+.about-mid-left-wrapper{
+    margin-top: 2rem;
+    display: flex;
+    justify-content: start;
+    width: 100%;
+    margin-bottom: 5rem;
+}
+.about-mid-left-wrapper li{
+    background: var(--white-1);
+    margin-bottom: 1rem;
+    padding-left: 2rem;
+    padding-right: 10rem;
+    border-radius: 50px;
+}
+.about-mid-right{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.about-mid-right h2{
+    margin-bottom: 5rem;
+}
+.about-mid-right-wrapper{
+    width: 100%;
+    height: 50rem;
+    background-image: url('./images/annie-spratt-1YnBzhJISg4-unsplash.jpg');
+    background-size: cover;
+    background-position: top center;
+    position: relative;
+    z-index: 1;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center ;
+    align-items: center;
+    margin-bottom: 15rem;
+}
+.about-mid-right h2{
+    margin-top: -3rem;
+    margin-bottom: 2rem;
+}
+.about-mid-right p{
+    margin-bottom: 5rem;
+}
+.about-mid-right-img-text{
+    background: var(--black-1);
+    color: white;
+    margin-bottom: -50rem;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 10rem;
+}
+.about-mid-right-img-text h2{
+    margin-top: 2rem;
+}
+.about-mid-right-img-text p{
+    color: white;
+}
+@media only screen and (min-width: 768px){
+    .about-mid-wrapper{
+        display: grid;
+        grid-template-columns: 50% 50%;
+        gap: 3rem;
+        margin-top: -15rem;
+    }
+    .about-mid-right h2{
+        margin-top: 15rem;
+        margin-bottom: 5rem;
+    }
+    .about-mid-right-img-text{
+        height: 20rem;
+    }
+}
+/* End About Mid Section  */
+
+/* Our Team Section  */
+
+#our-team{
+    background: var(--white-1);
+}
+.our-team-wrapper{
+    width: 90%;
+}
+.our-team-wrapper .sub-heading{
+    margin-bottom: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.our-team-wrapper p{
+    text-align: center;
+    margin-bottom: 2rem;
+}
+.our-team-items{
+    display: flex;
+    flex-direction: column;
+    margin-right: 10rem;
+    margin-left: 10rem;
+}
+.our-team-img{
+    height: 50rem;
+}
+.our-team-img img{
+    object-fit: cover;
+}
+.our-team-name{
+    margin-bottom: 5rem;
+    padding-top: 1rem;
+    padding-bottom: 0.5rem;
+}
+.our-team-card{
+    background: var(--black-1);
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10rem;
+    color: #fff;
+}
+.our-team-card-img{
+    width: 5rem;
+    height: 5rem;
+    border-radius: 50%;
+    border: 0.2rem solid white;
+}
+.our-team-card-img .hand{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.our-team-card-img .hand i{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    padding: 0.5rem;
+}
+.our-team-card .sub-heading{
+    color: #fff;
+}
+.our-team-card p{
+    color: white;
+}
+
+@media only screen and (min-width: 768px){
+    .our-team-items-wrapper{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        gap: 2rem;
+    }
+}
+/* End Our Team Section  */
