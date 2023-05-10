@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home | Africa Help Uk</title>
+    <title>About Us | Africa Help Uk</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="our-causes.css">
 
@@ -15,34 +15,30 @@
     
 <!-- Top Bar Section  -->
 <section id="top-bar">
-    <div class="top-bar-section">
+    <div class="top-bar">
         <div class="top-bar-wrapper">
-            <div class="top-bar-grid">
-                <div class="top-bar-contact-wrap">
-                    <div class="top-contact-item">
-                        <a class="top-social-link-item"><i class='bx bxs-phone bx-sm'></i></a>
-                        <a href="tel:+01569896654" class="top-bar-contact-link">+01 569 896 654</a>
-                    </div>
-                    <div class="top-contact-item">
-                        <a class="top-social-link-item"><i class='bx bxs-envelope bx-sm'></i></a>
-                        <a href="mailto:info@charity.com" class="top-bar-contact-link">info@africahelp.uk</a>
-                    </div>
+            <div class="top-bar-contact-items">
+                <div class="top-contact-item">
+                    <a class="top-social-link-item"><i class='bx bxs-phone bx-lg'></i></a>
+                    <a href="tel:+01569896654" class="top-bar-contact-link">+01 569 896 654</a>
                 </div>
-                <div class="top-bar-social-wrap">
-                    <div class="top-social-link-wrap">
-                        <a href="#" class="top-social-link-item">
-                            <i class='bx bxl-facebook'></i>
-                        </a>
-                        <a href="#" class="top-social-link-item">
-                            <i class='bx bxl-twitter'></i>
-                        </a>
-                        <a href="#" class="top-social-link-item">
-                            <i class='bx bxl-instagram'></i>
-                        </a>
-                        <a href="#" class="top-social-link-item">
-                            <i class='bx bxl-youtube'></i>
-                        </a>
-                    </div>
+                <div class="top-contact-item">
+                    <a class="top-social-link-item"><i class='bx bxs-envelope bx-lg'></i></a>
+                    <a href="mailto:info@charity.com" class="top-bar-contact-link">info@africahelp.uk</a>
+                </div>
+                <div class="top-contact-item">
+                    <a href="#" class="top-social-link-item">
+                        <i class='bx bxl-facebook bx-lg'></i>
+                    </a>
+                    <a href="#" class="top-social-link-item">
+                        <i class='bx bxl-twitter bx-lg'></i>
+                    </a>
+                    <a href="#" class="top-social-link-item">
+                        <i class='bx bxl-instagram bx-lg'></i>
+                    </a>
+                    <a href="#" class="top-social-link-item">
+                        <i class='bx bxl-youtube bx-lg'></i>
+                    </a>
                 </div>
             </div>
         </div>
@@ -86,16 +82,12 @@
                             class="nav__link">Our Causes</a></li>
                         <li><a href="our-events.html"
                             class="nav__link">Events</a></li>
-                        <li><a href="gallery.html"
-                            class="nav__link">Gallery</a></li>
                         <li><a href="about.html"
                             class="nav__link">About Us</a></li>
                         <li><a href="contact.html"
                             class="nav__link">Contact</a></li>
-                        <li><a href="donate.html"
-                            class="btn primary-btn">Donate</a></li>
-                        <li><a href="volunteer.html"
-                            class="btn secondary-btn">Be a Volunteer</a></li>
+                        <li><button type="submit" onclick="openPopup()"
+                            class="btn primary-btn">Donate</button></li>
                     </div>
                 </ul>
             </nav>
@@ -108,8 +100,9 @@
 <section id="about-hero">
     <div class="container">
         <div class="hero-wrapper">
-            <div class="about-hero-wording">
-                <h1>About Us</h1>
+            <div class="our-hero-wording">
+                <h1 class="main-heading">Learn... </h1>
+                <h1 class="section-heading">About Us</h1>
             </div>
         </div>
     </div>
@@ -124,7 +117,7 @@
             <div class="about-left">
                 <div class="about-left-wrapper">
                     <div class="about-left-img">
-                            <img src="./images/hanna-morris-3EkT6xb4K9w-unsplash.jpg" alt="about-image">
+                            <img src="./images/colby-ray-aP65qX8Zy38-unsplash.jpg" alt="about-image">
                     </div>
                     <div class="about-left-img-text">
                         <h2 class="sub-heading">Only A Life Lived For Other Is Worth</h2>
@@ -140,9 +133,6 @@
                     </p>
                     <div class="about-right-text">
                         <p>Save the Children believes every child deserves a future.</p>
-                    </div>
-                    <div class="about-right-button">
-                        <a href="#" class="btn secondary-btn">More About</a>
                     </div>
                 </div>
             </div>
@@ -203,43 +193,41 @@
 
 <section id="our-team">
     <div class="our-team container">
+        <h1 class="section-heading">Our Team</h1>
+        <h2 class="sub-heading">Meet Our Volunteers</h2>
         <div class="our-team-wrapper">
-            <h2 class="sub-heading">Our Team</h2>
-            <p>Meet Our Volunteers</p>
             <div class="our-team-items">
-                <div class="our-team-items-wrapper">
-                    <div class="our-team-item">
-                        <div class="our-team-img">
-                            <img src="./images/melissa-askew-p8qMRZXCLd0-unsplash.jpg" alt="image">
-                        </div>
-                        <div class="our-team-name">
-                            <h2 class="sub-heading">Espinoza</h2>
-                        </div>
+                <div class="our-team-item">
+                    <div class="our-team-img">
+                        <img src="./images/DKS_4493.jpg" alt="image">
                     </div>
-                    <div class="our-team-item">
-                        <div class="our-team-img">
-                            <img src="./images/melissa-askew-p8qMRZXCLd0-unsplash.jpg" alt="image">
-                        </div>
-                        <div class="our-team-name">
-                            <h2 class="sub-heading">Espinoza</h2>
-                        </div>
+                    <div class="our-team-name">
+                        <p>Nana Debrah</p>
                     </div>
-                    <div class="our-team-item">
-                        <div class="our-team-img">
-                            <img src="./images/melissa-askew-p8qMRZXCLd0-unsplash.jpg" alt="image">
-                        </div>
-                        <div class="our-team-name">
-                            <h2 class="sub-heading">Espinoza</h2>
-                        </div>
+                </div>
+                <div class="our-team-item">
+                    <div class="our-team-img">
+                        <img src="./images/usman-yousaf-yIOViGQmjJ4-unsplash.jpg" alt="image">
                     </div>
-                    <div class="our-team-card">
-                        <div class="our-team-card-img">
-                            <span class="hand"><i class='bx bxs-hand bx-lg'></i></span>
-                        </div>
-                        <h2 class="sub-heading">Become a Volunteer</h2>
-                        <p>Centuries but also the leap electtype setting, remaining</p>
-                        <h2>JOIN US TODAY</h2>
+                    <div class="our-team-name">
+                        <p>Nana Kwame Owusu-Ansah</p>
                     </div>
+                </div>
+                <div class="our-team-item">
+                    <div class="our-team-img">
+                        <img src="./images/sigmund-a19OVaa2rzA-unsplash.jpg" alt="image">
+                    </div>
+                    <div class="our-team-name">
+                        <p>Fred Attah-Krah</p>
+                    </div>
+                </div>
+                <div class="our-team-card">
+                    <div class="our-team-card-img">
+                        <span class="hand"><i class='bx bxs-hand bx-lg'></i></span>
+                    </div>
+                    <h2 class="sub-heading">Become a Volunteer</h2>
+                    <p>Centuries but also the leap electtype setting, remaining</p>
+                    <h2 class="main-heading">JOIN US TODAY</h2>
                 </div>
             </div>
         </div>
@@ -265,6 +253,58 @@
 </section>
 
 <!-- End Newsletter Section  -->
+
+<!-- Donate Section  -->
+<div class="donate" id="donate">
+    <div class="donate-wrapper">
+       <div class="donate-left">
+           <div class="donate-left-wrapper">
+               <h2 class="sub-heading">Donate Here</h2>
+               <p>Kindly use any of the payment platforms below to make your donations</p>
+               <div class="qr-code-wrapper">
+                   <div class="qr-code">
+                       <span><i class='bx bx-qr bx-lg' ></i></span>
+                   </div>
+                   <div class="qr-code-text">
+                       <p>Scan this QR code to Donate to Africa Help UK</p>
+                   </div>
+               </div>
+               <h2 class="sub-heading">Accepted Payment Methods</h2>
+               <div class="payment-methods-wrapper">
+                   <span><i class='bx bxl-visa bx-lg'></i></span>
+                   <span><i class='bx bxl-mastercard bx-lg'></i></span>
+                   <span><i class='bx bxl-paypal bx-lg' ></i></span>
+                   <span><i class='bx bxl-amazon bx-lg' ></i></span>
+               </div>
+           </div>
+       </div>
+       <div class="donate-right">
+           <div class="donate-right-wrapper">
+               <h2 class="sub-heading">Bank Details</h2>
+               <p class="sub">Create and format headings, paragraphs, 
+                   blockquotes images and video all in one place instead
+               </p>
+               <div class="acc-details-wrapper">
+                   <div class="acc-details">
+                       <p>Account Number</p>
+                       <p>2223330000456987</p>
+                   </div>
+                   <div class="acc-details">
+                       <p>Beneficiary Name</p>
+                       <p>Africa Help UK</p>
+                   </div>
+                   <div class="acc-details">
+                       <p>IFSC Code</p>
+                       <p>WRDSBI0BNKPIS</p>
+                   </div>
+               </div>
+               <button class="btn secondary-btn" type="submit" onclick="closePopup()">Thank You</button>
+           </div>
+       </div>
+    </div>
+</div>
+
+<!-- End Donate Section  -->
 
 <!-- Footer Section  -->
 <section id="footer">

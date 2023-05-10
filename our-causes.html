@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home | Africa Help Uk</title>
+    <title>Our Causes | Africa Help Uk</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="our-causes.css">
 
@@ -15,34 +15,30 @@
     
 <!-- Top Bar Section  -->
 <section id="top-bar">
-    <div class="top-bar-section">
+    <div class="top-bar">
         <div class="top-bar-wrapper">
-            <div class="top-bar-grid">
-                <div class="top-bar-contact-wrap">
-                    <div class="top-contact-item">
-                        <a class="top-social-link-item"><i class='bx bxs-phone bx-sm'></i></a>
-                        <a href="tel:+01569896654" class="top-bar-contact-link">+01 569 896 654</a>
-                    </div>
-                    <div class="top-contact-item">
-                        <a class="top-social-link-item"><i class='bx bxs-envelope bx-sm'></i></a>
-                        <a href="mailto:info@charity.com" class="top-bar-contact-link">info@africahelp.uk</a>
-                    </div>
+            <div class="top-bar-contact-items">
+                <div class="top-contact-item">
+                    <a class="top-social-link-item"><i class='bx bxs-phone bx-lg'></i></a>
+                    <a href="tel:+01569896654" class="top-bar-contact-link">+01 569 896 654</a>
                 </div>
-                <div class="top-bar-social-wrap">
-                    <div class="top-social-link-wrap">
-                        <a href="#" class="top-social-link-item">
-                            <i class='bx bxl-facebook'></i>
-                        </a>
-                        <a href="#" class="top-social-link-item">
-                            <i class='bx bxl-twitter'></i>
-                        </a>
-                        <a href="#" class="top-social-link-item">
-                            <i class='bx bxl-instagram'></i>
-                        </a>
-                        <a href="#" class="top-social-link-item">
-                            <i class='bx bxl-youtube'></i>
-                        </a>
-                    </div>
+                <div class="top-contact-item">
+                    <a class="top-social-link-item"><i class='bx bxs-envelope bx-lg'></i></a>
+                    <a href="mailto:info@charity.com" class="top-bar-contact-link">info@africahelp.uk</a>
+                </div>
+                <div class="top-contact-item">
+                    <a href="#" class="top-social-link-item">
+                        <i class='bx bxl-facebook bx-lg'></i>
+                    </a>
+                    <a href="#" class="top-social-link-item">
+                        <i class='bx bxl-twitter bx-lg'></i>
+                    </a>
+                    <a href="#" class="top-social-link-item">
+                        <i class='bx bxl-instagram bx-lg'></i>
+                    </a>
+                    <a href="#" class="top-social-link-item">
+                        <i class='bx bxl-youtube bx-lg'></i>
+                    </a>
                 </div>
             </div>
         </div>
@@ -86,16 +82,12 @@
                             class="nav__link">Our Causes</a></li>
                         <li><a href="our-events.html"
                             class="nav__link">Events</a></li>
-                        <li><a href="gallery.html"
-                            class="nav__link">Gallery</a></li>
                         <li><a href="about.html"
                             class="nav__link">About Us</a></li>
                         <li><a href="contact.html"
                             class="nav__link">Contact</a></li>
-                        <li><a href="donate.html"
-                            class="btn primary-btn">Donate</a></li>
-                        <li><a href="volunteer.html"
-                            class="btn secondary-btn">Be a Volunteer</a></li>
+                        <li><button type="submit" onclick="openPopup()"
+                            class="btn primary-btn">Donate</button></li>
                     </div>
                 </ul>
             </nav>
@@ -106,126 +98,115 @@
 
 <!-- Our Causes Section  -->
 <section id="our-causes-hero">
-    <div class="container">
-        <div class="hero-wrapper">
-            <div class="our-causes-hero-wording">
-                <h1>Our Causes</h1>
-            </div>
-        </div>
+    <div class="our-hero-wording">
+        <h1 class="main-heading">Support... </h1>
+        <h1 class="section-heading">Our Causes</h1>
     </div>
 </section>
 <section id="our-causes">
     <div class="our-causes container">
         <div class="our-causes-wrapper">
-            <div class="our-causes-card">
-                <div class="our-causes-items">
-                    <div class="our-causes-img">
-                        <img src="./images/annie-spratt-wtk4VH8EU20-unsplash.jpg" alt="Portable">
-                    </div>
-                    <div class="our-causes-text">
-                        <h2>Provide Portable Water in Atwima Mponua</h2>
-                    </div class="our-causes-text">
-                    <div class="our-causes-button">
-                        <a href="#" class="btn primary-btn">Donate
-                            <span class="hero-button-arrow">
-                                <i class='bx bx-right-arrow-circle'></i>
-                            </span>
-                        </a> 
-                    </div>
-                </div>
-            </div>
-            <div class="our-causes-card">
-                <div class="our-causes-items">
-                    <div class="our-causes-img">
-                        <img src="./images/annie-spratt-wtk4VH8EU20-unsplash.jpg" alt="Portable">
-                    </div>
-                    <div class="our-causes-text">
-                        <h2>Provide Portable Water in Atwima Mponua</h2>
-                    </div>
-                    <div class="our-causes-button">
-                        <a href="#" class="btn primary-btn">Donate
-                            <span class="hero-button-arrow">
-                                <i class='bx bx-right-arrow-circle'></i>
-                            </span>
-                        </a> 
+            <div class="our-causes-card-items">
+                <div class="our-causes-card">
+                    <div class="our-causes-items">
+                        <div class="our-causes-img">
+                            <img src="./images/astrid-schaffner-UcMQ55m8R1c-unsplash.jpg" alt="Portable">
+                        </div>
+                        <div class="our-causes-text">
+                            <h2 class="main-heading">Awareness</h2>
+                            <p>Raising awareness on causes, prevention and treatment</p>
+                        </div class="our-causes-text">
+                        <div class="our-causes-button">
+                            <a href="#" class="btn primary-btn">Donate</a> 
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="our-causes-card">
-                <div class="our-causes-items">
-                    <div class="our-causes-img">
-                        <img src="./images/annie-spratt-wtk4VH8EU20-unsplash.jpg" alt="Portable">
-                    </div>
-                    <div class="our-causes-text">
-                        <h2>Provide Portable Water in Atwima Mponua</h2>
-                    </div>
-                    <div class="our-causes-button">
-                        <a href="#" class="btn primary-btn">Donate
-                            <span class="hero-button-arrow">
-                                <i class='bx bx-right-arrow-circle'></i>
-                            </span>
-                        </a> 
+                <div class="our-causes-card">
+                    <div class="our-causes-items">
+                        <div class="our-causes-img">
+                            <img src="./images/nappy-XsYJ1KueUUY-unsplash.jpg" alt="Portable">
+                        </div>
+                        <div class="our-causes-text">
+                            <h2 class="main-heading">Support</h2>
+                            <p>Provide support to poor and vulnerable people living with dementia and their families</p>
+                        </div>
+                        <div class="our-causes-button">
+                            <a href="#" class="btn primary-btn">Donate</a> 
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="our-causes-card">
-                <div class="our-causes-items">
-                    <div class="our-causes-img">
-                        <img src="./images/annie-spratt-wtk4VH8EU20-unsplash.jpg" alt="Portable">
+                <div class="our-causes-card">
+                    <div class="our-causes-items">
+                        <div class="our-causes-img">
+                            <img src="./images/national-cancer-institute-9k4Fglw6eFQ-unsplash.jpg" alt="Portable">
+                        </div>
+                        <div class="our-causes-text">
+                            <h2 class="main-heading">Advocacy</h2>
+                            <p>Advocate for policy changes that benefit people with dementia</p>
+                        </div>
+                        <div class="our-causes-button">
+                            <a href="#" class="btn primary-btn">Donate</a> 
+                        </div>
                     </div>
-                    <div class="our-causes-text">
-                        <h2>Provide Portable Water in Atwima Mponua</h2>
-                    </div class="our-causes-text">
-                    <div class="our-causes-button">
-                        <a href="#" class="btn primary-btn">Donate
-                            <span class="hero-button-arrow">
-                                <i class='bx bx-right-arrow-circle'></i>
-                            </span>
-                        </a> 
-                    </div>
-                </div>
-            </div>
-            <div class="our-causes-card">
-                <div class="our-causes-items">
-                    <div class="our-causes-img">
-                        <img src="./images/annie-spratt-wtk4VH8EU20-unsplash.jpg" alt="Portable">
-                    </div>
-                    <div class="our-causes-text">
-                        <h2>Provide Portable Water in Atwima Mponua</h2>
-                    </div>
-                    <div class="our-causes-button">
-                        <a href="#" class="btn primary-btn">Donate
-                            <span class="hero-button-arrow">
-                                <i class='bx bx-right-arrow-circle'></i>
-                            </span>
-                        </a> 
-                    </div>
-                </div>
-            </div>
-            <div class="our-causes-card">
-                <div class="our-causes-items">
-                    <div class="our-causes-img">
-                        <img src="./images/annie-spratt-wtk4VH8EU20-unsplash.jpg" alt="Portable">
-                    </div>
-                    <div class="our-causes-text">
-                        <h2>Provide Portable Water in Atwima Mponua</h2>
-                    </div>
-                    <div class="our-causes-button">
-                        <a href="#" class="btn primary-btn">Donate
-                            <span class="hero-button-arrow">
-                                <i class='bx bx-right-arrow-circle'></i>
-                            </span>
-                        </a> 
-                    </div>
-                </div>
-            </div>
+                </div> 
+            </div>   
         </div>
     </div>
 </section>
 
 <!-- End Our Causes Section  -->
 
+<!-- Donate Section  -->
+<div class="donate" id="donate">
+    <div class="donate-wrapper">
+       <div class="donate-left">
+           <div class="donate-left-wrapper">
+               <h2 class="sub-heading">Donate Here</h2>
+               <p>Kindly use any of the payment platforms below to make your donations</p>
+               <div class="qr-code-wrapper">
+                   <div class="qr-code">
+                       <span><i class='bx bx-qr bx-lg' ></i></span>
+                   </div>
+                   <div class="qr-code-text">
+                       <p>Scan this QR code to Donate to Africa Help UK</p>
+                   </div>
+               </div>
+               <h2 class="sub-heading">Accepted Payment Methods</h2>
+               <div class="payment-methods-wrapper">
+                   <span><i class='bx bxl-visa bx-lg'></i></span>
+                   <span><i class='bx bxl-mastercard bx-lg'></i></span>
+                   <span><i class='bx bxl-paypal bx-lg' ></i></span>
+                   <span><i class='bx bxl-amazon bx-lg' ></i></span>
+               </div>
+           </div>
+       </div>
+       <div class="donate-right">
+           <div class="donate-right-wrapper">
+               <h2 class="sub-heading">Bank Details</h2>
+               <p class="sub">Create and format headings, paragraphs, 
+                   blockquotes images and video all in one place instead
+               </p>
+               <div class="acc-details-wrapper">
+                   <div class="acc-details">
+                       <p>Account Number</p>
+                       <p>2223330000456987</p>
+                   </div>
+                   <div class="acc-details">
+                       <p>Beneficiary Name</p>
+                       <p>Africa Help UK</p>
+                   </div>
+                   <div class="acc-details">
+                       <p>IFSC Code</p>
+                       <p>WRDSBI0BNKPIS</p>
+                   </div>
+               </div>
+               <button class="btn secondary-btn" type="submit" onclick="closePopup()">Thank You</button>
+           </div>
+       </div>
+    </div>
+</div>
 
+<!-- End Donate Section  -->
 
 <!-- Footer Section  -->
 <section id="footer">
@@ -235,7 +216,7 @@
                 <div class="footer-left-wrapper">
                     <div class="footer-heading">
                         <div class="footer-logo">
-                            <img src="./images/africahelplogo.png" alt="footer-logo">
+                            <img src="images/africahelplogo.png" alt="footer-logo">
                         </div>
                         <h1 class="sub-heading">Africa Help UK</h1>
                     </div>
@@ -244,16 +225,16 @@
                     </p>
                     <div class="footer-socials">
                         <a href="#" class="top-social-link-item">
-                            <i class='bx bxl-facebook'></i>
+                            <i class='bx bxl-facebook bx-lg'></i>
                         </a>
                         <a href="#" class="top-social-link-item">
-                            <i class='bx bxl-twitter'></i>
+                            <i class='bx bxl-twitter bx-lg'></i>
                         </a>
                         <a href="#" class="top-social-link-item">
-                            <i class='bx bxl-instagram'></i>
+                            <i class='bx bxl-instagram bx-lg'></i>
                         </a>
                         <a href="#" class="top-social-link-item">
-                            <i class='bx bxl-youtube'></i>
+                            <i class='bx bxl-youtube bx-lg'></i>
                         </a>
                     </div>
                 </div>
@@ -295,8 +276,9 @@
 <footer>
     <p>Copyright &#169 2023 Africa Help UK - Powered by The Minibus Company</p>
 </footer>
-        
-        <script src="main.js"></script>
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+<script src="main.js"></script>
         
     </body>
 </html>

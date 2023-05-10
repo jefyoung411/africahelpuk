@@ -25,6 +25,8 @@
       }
     ],
     "no-inline-styles": "off",
-    "disown-opener": "off"
+    "disown-opener": "off",
+    "leading-dot-classlist": "off",
+    "detect-css-reflows/composite": "off"
   }
 }

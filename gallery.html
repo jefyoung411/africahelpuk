@@ -92,10 +92,8 @@
                             class="nav__link">About Us</a></li>
                         <li><a href="contact.html"
                             class="nav__link">Contact</a></li>
-                        <li><a href="donate.html"
-                            class="btn primary-btn">Donate</a></li>
-                        <li><a href="volunteer.html"
-                            class="btn secondary-btn">Be a Volunteer</a></li>
+                        <li><button type="submit" onclick="openPopup()"
+                            class="btn primary-btn">Donate</button></li>
                     </div>
                 </ul>
             </nav>
@@ -161,6 +159,58 @@
 </section>
 
 <!-- End Our Events Section  -->
+
+<!-- Donate Section  -->
+<div class="donate" id="donate">
+    <div class="donate-wrapper">
+       <div class="donate-left">
+           <div class="donate-left-wrapper">
+               <h2 class="sub-heading">Donate Here</h2>
+               <p>Kindly use any of the payment platforms below to make your donations</p>
+               <div class="qr-code-wrapper">
+                   <div class="qr-code">
+                       <span><i class='bx bx-qr bx-lg' ></i></span>
+                   </div>
+                   <div class="qr-code-text">
+                       <p>Scan this QR code to Donate to Africa Help UK</p>
+                   </div>
+               </div>
+               <h2 class="sub-heading">Accepted Payment Methods</h2>
+               <div class="payment-methods-wrapper">
+                   <span><i class='bx bxl-visa bx-lg'></i></span>
+                   <span><i class='bx bxl-mastercard bx-lg'></i></span>
+                   <span><i class='bx bxl-paypal bx-lg' ></i></span>
+                   <span><i class='bx bxl-amazon bx-lg' ></i></span>
+               </div>
+           </div>
+       </div>
+       <div class="donate-right">
+           <div class="donate-right-wrapper">
+               <h2 class="sub-heading">Bank Details</h2>
+               <p class="sub">Create and format headings, paragraphs, 
+                   blockquotes images and video all in one place instead
+               </p>
+               <div class="acc-details-wrapper">
+                   <div class="acc-details">
+                       <p>Account Number</p>
+                       <p>2223330000456987</p>
+                   </div>
+                   <div class="acc-details">
+                       <p>Beneficiary Name</p>
+                       <p>Africa Help UK</p>
+                   </div>
+                   <div class="acc-details">
+                       <p>IFSC Code</p>
+                       <p>WRDSBI0BNKPIS</p>
+                   </div>
+               </div>
+               <button class="btn secondary-btn" type="submit" onclick="closePopup()">Thank You</button>
+           </div>
+       </div>
+    </div>
+</div>
+
+<!-- End Donate Section  -->
 
 <!-- Footer Section  -->
 <section id="footer">

@@ -1,29 +1,43 @@
 /* Our Causes Section  */
 #our-causes-hero{
     width: 100%;
-    background-image: url('./images/emmanuel-ikwuegbu-M-4lFg1Xfag-unsplash.jpg');
+    height: 100vh;
+    background-image: url('./images/robina-weermeijer-3KGF9R_0oHs-unsplash.jpg');
     background-size: cover;
     background-position: top center;
     position: relative;
     z-index: 1;
     display: flex;
     flex-wrap: wrap;
-    justify-content: center ;
+    justify-content: center;
     align-items: center;
 }
 .our-causes-hero-wording{
+    display: flex;
+    flex-direction: column;
     color: white;
-    font-size: 6rem;
+    justify-content: center;
+    align-items: flex-start;
+}
+.our-causes-hero-wording .section-heading{
+    margin-top: 1rem;
+    font-size: 7rem;
 }
 .our-causes-wrapper{
     margin-top: 10rem;
+}
+@media only screen and (min-width: 768px){
+    .our-causes-hero-wording .section-heading{
+        font-size: 10rem;
+    }
 }
 /* End Our Causes Section  */
 
 /* Our Events Section  */
 #our-events-hero{
     width: 100%;
-    background-image: url('./images/bill-wegener-LqOO5Ko0zSo-unsplash.jpg');
+    height: 100vh;
+    background-image: url('./images/centre-for-ageing-better-n0cYCEWiILw-unsplash.jpg');
     background-size: cover;
     background-position: top center;
     position: relative;
@@ -32,19 +46,29 @@
     flex-wrap: wrap;
     justify-content: center ;
     align-items: center;
-}
-.our-events-hero-wording{
-    color: white;
-    font-size: 6rem;
+    opacity: 1.7;
 }
 .our-events{
     margin-top: 7rem;
     width: 90%;
 }
-.our-events-img{
+.our-events-img1{
     width: 100%;
     height: 50rem;
-    background-image: url('./images/roman-nguyen-lPPkJ4NfQtQ-unsplash.jpg');
+    background-image: url('./images/total-shape-Ianw4RdVuoo-unsplash.jpg');
+    background-size: contain;
+    background-position: top center;
+    position: relative;
+    z-index: 1;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: start;
+    align-items: flex-start;
+}
+.our-events-img2{
+    width: 100%;
+    height: 50rem;
+    background-image: url('./images/DKS_4493.jpg');
     background-size: cover;
     background-position: top center;
     position: relative;
@@ -57,6 +81,9 @@
 .our-events-img-date{
     background-color: var(--black-1);
     padding: 4rem;
+    height: 20vh;
+    top: 0;
+    left: 0;
 }
 .our-events-date{
     color: white;
@@ -77,7 +104,7 @@
     margin-top: 2rem;
     text-align: center;
     font-weight: bold;
-    font-size: 2rem;
+    font-size: 1.4rem;
     margin-bottom: 1rem;
 }
 .our-events-left-wrapper-upper{
@@ -94,9 +121,16 @@
     background: var(--black-3);
     margin-left: 8rem;
     margin-right: 8rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
 }
 .events-location p{
     color: white;
+}
+.events-location .bx{
+    border: white solid 0.1rem;
+    border-radius: 1px;
+    margin-right: 1rem
 }
 .our-events-right{
     margin-top: 5rem;
@@ -108,6 +142,7 @@
 }
 .our-events-card-wrapper-left{
     width: 12rem;
+    height: 40vh;
     background: var(--black-1);
     display: flex;
     flex-direction: column;
@@ -121,6 +156,7 @@
 .our-events-card-wrapper-right p,
 .our-events-card-wrapper-right h2{
     text-align: start;
+    margin-bottom: 2rem;
 }
 .our-events-card{
     margin-bottom: 2rem;
@@ -132,11 +168,29 @@
         flex-direction: row;
         gap: 3rem;
     }
+    .our-events-left,
+    .our-events-right{
+        flex: 1;
+    }
     .our-events-card-wrapper-right h2{
         margin-bottom: 2rem;
     }
     .our-events-right{
         margin-top: 0.1rem;
+    }
+    .our-events-date{
+        margin-top: -1.5rem;
+    }
+}
+@media only screen and (max-width: 360px){
+    .our-events-card-wrapper-left{
+        height: 30vh;
+    }
+    .our-events-img1{
+        height: 40rem;
+    }
+    .our-events-img2{
+        height: 40rem;
     }
 }
 /* End Our Events Section  */
@@ -158,6 +212,8 @@
 .gallery-hero-wording{
     color: white;
     font-size: 6rem;
+    margin-top: 300px;
+    margin-bottom: 300px;
 }
 #gallery{
     width: 100%;
@@ -251,7 +307,8 @@
 /* About Section  */
 #about-hero{
     width: 100%;
-    background-image: url('./images/emmanuel-ikwuegbu-m4h6qtdogMk-unsplash.jpg');
+    height: 100vh;
+    background-image: url('./images/nappy-XsYJ1KueUUY-unsplash.jpg');
     background-size: cover;
     background-position: top center;
     position: relative;
@@ -265,6 +322,8 @@
 .about-hero-wording{
     color: white;
     font-size: 6rem;
+    margin-top: 300px;
+    margin-bottom: 300px;
 }
 .about-wrapper{
     display: flex;
@@ -358,9 +417,16 @@
 .about-mid-left-wrapper{
     margin-top: 2rem;
     display: flex;
-    justify-content: start;
+    justify-content: center;
+    align-items: center;
     width: 100%;
     margin-bottom: 5rem;
+}
+.about-mid-left-wrapper .mission-list{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 .about-mid-left-wrapper li{
     background: var(--white-1);
@@ -382,7 +448,7 @@
 .about-mid-right-wrapper{
     width: 100%;
     height: 50rem;
-    background-image: url('./images/annie-spratt-1YnBzhJISg4-unsplash.jpg');
+    background-image: url('./images/jeremy-wong-1iP2NFMaMHU-unsplash.jpg');
     background-size: cover;
     background-position: top center;
     position: relative;
@@ -442,27 +508,27 @@
 }
 .our-team-wrapper{
     width: 90%;
-}
-.our-team-wrapper .sub-heading{
-    margin-bottom: 5rem;
+    margin-top: 5rem;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 }
-.our-team-wrapper p{
-    text-align: center;
-    margin-bottom: 2rem;
+.our-team-wrapper .section-heading{
+    margin-bottom: 3rem;
 }
 .our-team-items{
     display: flex;
     flex-direction: column;
-    margin-right: 10rem;
-    margin-left: 10rem;
+    justify-content: center;
+    align-items: center;
 }
 .our-team-img{
-    height: 50rem;
+    width: 30rem;
+    height: 40rem;
 }
 .our-team-img img{
+    width: 100%;
     object-fit: cover;
 }
 .our-team-name{
@@ -480,6 +546,11 @@
     align-items: center;
     margin-bottom: 10rem;
     color: #fff;
+}
+.our-team-card p{
+    width: 90%;
+    text-align: center;
+    margin-bottom: 2rem;
 }
 .our-team-card-img{
     width: 5rem;
@@ -507,10 +578,88 @@
 }
 
 @media only screen and (min-width: 768px){
-    .our-team-items-wrapper{
+    .our-team-items{
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr;
         gap: 2rem;
     }
+    .our-team-card{
+        width: 30rem;
+        height: 100%;
+    }
+    
 }
 /* End Our Team Section  */
+
+/* Contact Section  */
+#contact-hero{
+    width: 100%;
+    background-image: url('./images/emmanuel-ikwuegbu-m4h6qtdogMk-unsplash.jpg');
+    background-size: cover;
+    background-position: top center;
+    position: relative;
+    z-index: 1;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center ;
+    align-items: center;
+    margin-bottom: 15rem;
+}
+.contact-hero-wording{
+    color: white;
+    font-size: 6rem;
+    margin-top: 300px;
+    margin-bottom: 300px;
+}
+.contact{
+    width: 90%;
+}
+.contact-left-wrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.contact-left-wrapper .sub-heading{
+    margin-bottom: 2rem;
+}
+.contact-left-wrapper p{
+    margin-bottom: 2rem;
+    text-align: center;
+}
+.contact-email-img i,
+.contact-phone-img{
+    background: var(--white-1);
+    padding: 1rem;
+}
+.contact-email-img span{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.contact-left-wrapper .top-bar-social-wrap{
+    margin-bottom: 5rem;
+}
+.contact-left-wrapper .top-bar-social-wrap a{
+    background: var(--black-1);
+    padding: 0.5rem;
+    border-radius: 4px;
+}
+.contact-right-wrapper .volunteer-right-wrapper{
+    margin-top: 5rem;
+    padding-top: 7rem;
+}
+
+@media only screen and (min-width: 768px){
+    .contact-wrapper{
+        display: flex;
+        flex-direction: row;
+    }
+    .contact-left,
+    .contact-right{
+        flex: 1;
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+}
+/* End Contact Section  */
