@@ -144,7 +144,7 @@ p{
         font-size: 7rem;
     }
 }
-@media only screen and (max-width: 360px){
+@media only screen and (max-width: 414px){
     .section-heading{
         width: 90%;
         text-align: center;
@@ -164,6 +164,10 @@ p{
         font-size: 4.8rem;
         text-align: center;
         margin-left: 3rem;
+    }
+    .container .section-heading{
+        width: 90%;
+        text-align: center;
     }
 }    
 /* End Global Styles  */
@@ -218,6 +222,14 @@ p{
         font-size: 1.6rem;
     }
 }
+@media only screen and (max-width: 414px){
+    #top-bar{
+        height: 1px;
+    }
+    .top-bar-contact-items{
+        padding-top: 0.3rem;
+    }
+}
 
 /* End Top Bar Section  */
 
@@ -265,8 +277,8 @@ p{
         position: relative;
     }
     .nav__logo{
-        width: 7rem;
-        height: 7rem;
+        width: 5rem;
+        height: 5rem;
     }
     .nav__icon{
         display: block;
@@ -534,16 +546,19 @@ p{
         font-size: 1.8rem;
     }
 }
-@media only screen and (max-width: 360px){
+@media only screen and (max-width: 414px){
+    .mission.container{
+        text-align: center;
+    }
+    .left-wrapper .main-heading{
+        text-align: center;
+    }
     .right-wrapper{
         padding-bottom: 5rem;
         margin-bottom: 5rem;
     }
     .right-wrapper h2{
         margin-bottom: 5rem;
-    }
-    .mission-list-item{
-        line-height: 2.5rem;
     }
     .mission-list li{
         line-height: 2.5rem;
@@ -630,13 +645,14 @@ p{
         
     }  
 }
-@media only screen and (max-width: 360px){
+@media only screen and (max-width: 414px){
+    .our-causes-card-items{
+        width: 100%;
+    }
     .our-causes-wrapper{
         margin-top: 1rem;
     }
-    .our-causes-card-items{
-        width: 90%;
-    }
+   
 }
 /* End Our Causes  */
 
@@ -752,7 +768,7 @@ p{
         margin-bottom: 3rem;
     }
 }
-@media only screen and (max-width: 360px){
+@media only screen and (max-width: 414px){
     .test-wrapper{
         display: flex;
         flex-direction: column;
@@ -770,7 +786,7 @@ p{
         grid-template-columns: 35% 1fr;
     }
     .test-card-img{
-        height: 30vh;
+        height: 100%;
         object-fit: contain;
     }
 }
@@ -1091,6 +1107,22 @@ p{
     .footer-right-wrapper{
         display: grid;
         grid-template-columns: 50% 50%;
+    }
+}
+@media only screen and (max-width: 414px){
+    .footer-wrapper{
+        margin-top: -5rem;
+    }
+    .footer-logo{
+        height: 8rem;
+        width: 8rem;
+    }
+    .footer-heading .sub-heading{
+        padding-top: 4rem;
+    }
+    .footer-right{
+        font-size: 1.5rem;
+        margin-bottom: -5rem;
     }
 }
 footer{
