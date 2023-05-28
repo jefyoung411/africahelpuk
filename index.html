@@ -79,13 +79,11 @@
                         <li><a href="index.html"
                             class="nav__link">Home</a></li>
                         <li><a href="our-causes.html"
-                            class="nav__link">Our Causes</a></li>
+                            class="nav__link">Causes</a></li>
                         <li><a href="our-events.html"
                             class="nav__link">Events</a></li>
                         <li><a href="about.html"
                             class="nav__link">About Us</a></li>
-                        <li><a href="contact.html"
-                            class="nav__link">Contact</a></li>
                         <li><button type="submit" onclick="openPopup()"
                             class="btn primary-btn">Donate</button></li>
                     </div>
@@ -164,11 +162,11 @@
             <div class="right-wrapper">
                 <h2 class="main-heading">Where the Money Goes</h2>
                 <ul class="mission-list">
-                    <li class="mission-list-item"><span><i class='bx bxs-check-circle'></i></span> Creating Awareness about Mental Health Conditions</li>
-                    <li><span><i class='bx bxs-check-circle'></i></span>   Providing Mental Health Assessments and Treatments</li>
-                    <li><span><i class='bx bxs-check-circle'></i></span>   Support Capacity Building Programs for Families and Other Caregivers</li>
-                    <li><span><i class='bx bxs-check-circle'></i></span>   Advocate for Policies Prioritizing Mental Health Needs</li>
-                    <li><span><i class='bx bxs-check-circle'></i></span>   Work with Community Leaders to Educate Older People and Their Families</li>
+                    <li><span><i class='bx bxs-check-circle'></i></span>Creating Awareness about Mental Health</li>
+                    <li><span><i class='bx bxs-check-circle'></i></span>Providing Access to Mental Health Assessments</li>
+                    <li><span><i class='bx bxs-check-circle'></i></span>Support Capacity Building Programs</li>
+                    <li><span><i class='bx bxs-check-circle'></i></span>Advocate for Mental Health Legislation</li>
+                    <li><span><i class='bx bxs-check-circle'></i></span>Community Leaders Sensitization</li>
                 </ul>
             </div>
         </div>
@@ -182,7 +180,7 @@
 <section id="our-causes">
     <div class="our-causes container">
         <div class="our-causes-wrapper">
-            <h1 class="section-heading">Our Causes</h1>
+            <h1 class="section-heading">Causes</h1>
             <h2 class="sub-heading">You can help lots of people by donating little</h2>
             <div class="our-causes-card-items">
                 <div class="our-causes-card">
@@ -258,7 +256,7 @@
                         <input class="form-group" type="text" name="full-name" placeholder=" Full Name" required>
                         <input class="form-group" type="email" name="email" placeholder=" Email" required>
                         <input class="form-group" type="number" name="phone" placeholder=" Phone Number" required>
-                        <textarea class="form-group-area" name="message" id="message" rows="10" placeholder=" Message" required></textarea>
+                        <textarea class="form-group-area" name="message" id="message" rows="15" placeholder=" Message" required></textarea>
                         <a href="#" class="btn secondary-btn">Submit Now</a>
                     </form>
                 </div>
@@ -460,56 +458,51 @@
 
 <!-- Donate Section  -->
 <div class="donate" id="donate">
-     <div class="donate-wrapper">
-        <div class="donate-left">
-            <div class="donate-left-wrapper">
-                <h2 class="sub-heading">Donate Here</h2>
-                <p>Kindly use any of the payment platforms below to make your donations</p>
-                <div class="qr-code-wrapper">
-                    <div class="qr-code">
-                        <span><i class='bx bx-qr bx-lg' ></i></span>
-                    </div>
-                    <div class="qr-code-text">
-                        <p>Scan this QR code to Donate to Africa Help UK</p>
+    <div class="donate-wrapper">
+        <div class="donate-close-btn">
+            <button class="close-btn" type="submit" onclick="closePopup()"><span><i class='bx bx-x bx-lg'></i></span></button>
+            <h2 class="sub-heading">Donate Here</h2>  
+            <div class="donate-details-wrapper">      
+                <div class="donate-left">
+                    <div class="donate-left-wrapper">
+                        <h2 class="sub-heading">Accepted Payment Methods</h2>
+                        <p>Kindly use any of the payment platforms below to make your donations</p>
+                        <div class="payment-methods-wrapper">
+                            <span><i class='bx bxl-visa bx-lg'></i></span>
+                            <span><i class='bx bxl-mastercard bx-lg'></i></span>
+                            <span><i class='bx bxl-paypal bx-lg' ></i></span>
+                            <span><i class='bx bxl-amazon bx-lg' ></i></span>
+                        </div>
                     </div>
                 </div>
-                <h2 class="sub-heading">Accepted Payment Methods</h2>
-                <div class="payment-methods-wrapper">
-                    <span><i class='bx bxl-visa bx-lg'></i></span>
-                    <span><i class='bx bxl-mastercard bx-lg'></i></span>
-                    <span><i class='bx bxl-paypal bx-lg' ></i></span>
-                    <span><i class='bx bxl-amazon bx-lg' ></i></span>
+                <div class="donate-right">
+                    <div class="donate-right-wrapper">
+                        <h2 class="sub-heading">Bank Details</h2>
+                        <p class="sub">Create and format headings, paragraphs, 
+                            blockquotes images and video all in one place instead
+                        </p>
+                        <div class="acc-details-wrapper">
+                            <div class="acc-details">
+                                <p class="acc-details-title">Account Number</p>
+                                <p>2223330000456987</p>
+                            </div>
+                            <div class="acc-details">
+                                <p class="acc-details-title">Beneficiary Name</p>
+                                <p>Africa Help UK</p>
+                            </div>
+                            <div class="acc-details">
+                                <p class="acc-details-title">IFSC Code</p>
+                                <p>WRDSBI0BNKPIS</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
-        <div class="donate-right">
-            <div class="donate-right-wrapper">
-                <h2 class="sub-heading">Bank Details</h2>
-                <p class="sub">Create and format headings, paragraphs, 
-                    blockquotes images and video all in one place instead
-                </p>
-                <div class="acc-details-wrapper">
-                    <div class="acc-details">
-                        <p>Account Number</p>
-                        <p>2223330000456987</p>
-                    </div>
-                    <div class="acc-details">
-                        <p>Beneficiary Name</p>
-                        <p>Africa Help UK</p>
-                    </div>
-                    <div class="acc-details">
-                        <p>IFSC Code</p>
-                        <p>WRDSBI0BNKPIS</p>
-                    </div>
-                </div>
-                <button class="btn secondary-btn" type="submit" onclick="closePopup()">Thank You</button>
-            </div>
-        </div>
-     </div>
+    </div>
 </div>
 
 <!-- End Donate Section  -->
-
 <!-- Footer Section  -->
 <section id="footer">
     <div class="footer container">

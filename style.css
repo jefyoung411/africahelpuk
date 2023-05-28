@@ -509,6 +509,9 @@ p{
     font-family: 'Montserrat';
     font-weight: 300;
 }
+.mission-list li span{
+    padding-right: 1rem;
+}
 @media only screen and (min-width: 768px){
     .mission .section-heading{
         margin-bottom: 5rem;
@@ -545,6 +548,9 @@ p{
     .mission-list li{
         font-size: 1.8rem;
     }
+    .mission-list li span{
+        padding-right: 2rem;
+    }
 }
 @media only screen and (max-width: 414px){
     .mission.container{
@@ -563,6 +569,13 @@ p{
     .mission-list li{
         line-height: 2.5rem;
         margin-bottom: 3rem;
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start; 
+        text-align: start;
+    }
+    .mission-list li span{
+        padding-right: 1rem;
     }
 }
 /* End Mission Section  */
@@ -589,6 +602,8 @@ p{
     gap: 2rem;
 }
 .our-causes-card{
+    position: relative;
+    z-index: 1;
     display: grid;
     grid-template-rows: 60% 30% 1fr;
     width: 100%;
@@ -729,8 +744,9 @@ p{
     text-align: center;
 }
 .test-card-wrapper{
-    display: flex;
-    flex-direction: row;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    gap: 2rem;
 }
 .test-card{
     background: var(--white-1);
@@ -743,7 +759,7 @@ p{
 }
 .test-card-img{
     width: 100%;
-    height: 50vh;
+    height: 18rem;
 }
 .test-card-img img{
     object-fit: cover;
@@ -762,7 +778,9 @@ p{
 }
 @media only screen and (max-width: 768px){
     .test-card-wrapper{
+        display: flex;
         flex-direction: column;
+        
     }
     .test-card{
         margin-bottom: 3rem;
@@ -941,6 +959,15 @@ p{
     padding: 2rem;
     background: var(--white-1);
 }
+.close-btn{
+    width: 100%;
+    border: none;
+    background-color: transparent;
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    align-items: flex-end;
+}
 .donate-left,
 .donate-right{
     text-align: center;
@@ -986,6 +1013,9 @@ p{
 .acc-details-wrapper{
     margin-bottom: 5rem;
 }
+.acc-details-title{
+    font-weight: bold;
+}
 @media only screen and (min-width: 768px){
     .donate{
         width: 80%;
@@ -997,7 +1027,7 @@ p{
         transform: translate(-50%, -50%) scale(1);
         z-index: 999;
     }
-    .donate-wrapper{
+    .donate-details-wrapper{
         display: flex;
         flex-direction: row;
     }
@@ -1005,9 +1035,7 @@ p{
     .donate-right{
         flex: 1;
     }
-    .donate-right-wrapper .sub{
-        margin-bottom: 10rem;
-    }
+
 }
 @media only screen and (max-width: 360px){
     .open-popup{
