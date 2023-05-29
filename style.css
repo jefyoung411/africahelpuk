@@ -29,6 +29,7 @@ html{
 body{
     background-color: var(--body-bg);
     overflow-x: hidden;
+    scroll-behavior: smooth;
 }
 img{
     width: 100%;
@@ -347,9 +348,9 @@ p{
 /* End of Nav Section  */
 
 /* Hero Section  */
-#hero{  
-    height: 100vh;
+#hero{ 
     width: 100%;
+    height: 100vh;
     position: relative;
     overflow-x: hidden;
 }
@@ -440,6 +441,7 @@ p{
     pointer-events: all;
     padding: 15px;
     background-color: rgba(255, 255, 255, 0.637);
+    
 }
 .buttons div:hover{
     background-color: white; 
@@ -469,7 +471,7 @@ p{
 
  @media only screen and (max-width: 768px){
     .dots{
-        left: 0;
+        left: 50%;
         transform: translateX(0);
     }
  }
@@ -906,21 +908,22 @@ p{
     margin-bottom: 2rem;
     text-align: center;
 }
-.form-area{
-    width: 90%;
+.newsletter-wrapper form{
+    width: 100%;
     display: flex;
     flex-direction: row;
     margin-bottom: 5rem;
 }
-.newsletter-wrapper .form-group{
+.newsletter-wrapper form input{
     border-radius: 50px;
+    width: 100%;
 }
 .newsletter-wrapper button{
     height: 5rem;
     margin-left: 2rem;
     color: white;
-    padding-left: 2rem;
-    padding-right: 2rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
     background-color: var(--black-2);
     
 }
@@ -1113,6 +1116,9 @@ p{
     font-size: 1.8rem;
     text-align: center;
 }
+.footer a{
+    color: white;
+}
 @media only screen and (min-width: 768px){
     .footer-wrapper{
         display: flex;
@@ -1136,6 +1142,7 @@ p{
         display: grid;
         grid-template-columns: 50% 50%;
     }
+   
 }
 @media only screen and (max-width: 414px){
     .footer-wrapper{
