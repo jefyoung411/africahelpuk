@@ -252,12 +252,12 @@
             <div class="volunteer-right">
                 <div class="volunteer-right-wrapper">
                     <h2 class="sub-heading">Fill This Form to Join</h2>
-                    <form action="#">
+                    <form action="#" name="volunteer-form" netlify>
                         <input class="form-group" type="text" name="full-name" placeholder=" Full Name" required>
                         <input class="form-group" type="email" name="email" placeholder=" Email" required>
                         <input class="form-group" type="number" name="phone" placeholder=" Phone Number" required>
                         <textarea class="form-group-area" name="message" id="message" rows="15" placeholder=" Message" required></textarea>
-                        <a href="#" class="btn secondary-btn">Submit Now</a>
+                        <a type="submit"  href="#" class="btn secondary-btn">Submit Now</a>
                     </form>
                 </div>
             </div>  
@@ -447,8 +447,10 @@
             <h2 class="sub-heading">Subscribe</h2>
             <p>Sign Up to Our Quarterly Newsletter to Get The Latest News, Events, Volunteer Opportunities</p>
             <div class="form-area">
-                <input class="form-group" type="email" name="email" id="email" placeholder=" Enter Your Email Address">
-                <button class="btn primary-btn">SEND</button>
+                <form action="#" name="newsletter-form" netlify>
+                    <input class="form-group" type="email" name="email" id="email" placeholder=" Enter Your Email Address">
+                    <button type="submit" class="btn primary-btn">SEND</button>
+                </form>
             </div>
         </div>
     </div>
